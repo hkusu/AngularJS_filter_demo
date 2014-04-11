@@ -1,0 +1,21 @@
+<div class="container" ng-controller="MainCtrl">
+    <br>
+    <h2><u>東京23区 郵便番号•住所検索</u></h2><br>
+    <input type="text" calss="sapn2" ng-model="search" placeholder="検索キーワードを入力">&nbsp;<small>(郵便番号、住所どちらでもOK)</small><br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>郵便番号</th><th>都道府県(東京のみ)</th><th>区</th><th>町</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="data in datas | filter:search">
+                <td>{{data.val0}}</td>
+                <td>{{data.val1}}</td>
+                <td>{{data.val2}}</td>
+                <td>{{data.val3}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
