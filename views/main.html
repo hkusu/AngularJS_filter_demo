@@ -1,7 +1,10 @@
 <div class="container" ng-controller="MainCtrl">
     <br>
-    <h2><u>東京23区 郵便番号•住所検索</u></h2><br>
-    <input type="text" calss="sapn2" ng-model="search" placeholder="検索キーワードを入力">&nbsp;<small>(郵便番号、住所どちらでもOK)</small><br>
+    <h3><strong>東京23区 郵便番号•住所検索</strong></h3><br>
+    <p>
+      <font color="grey">AngularJSのFilter機能を利用したデモです。検索キーワードに郵便番号または住所の一部を入力すると、1文字入力するたびにリアルタイムに検索結果が絞りこまれます。</font>
+    </p>
+    <input type="text" calss="sapn2" ng-model="search" placeholder="検索キーワードを入力">&nbsp;<small><font color="grey">(郵便番号、住所どちらでもOK)</font></small><br>
     <br>
     <table class="table table-striped">
         <thead>
